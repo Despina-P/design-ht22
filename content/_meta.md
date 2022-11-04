@@ -9,6 +9,6 @@ Social:
       url: https://dbwebb.se/design
       icon: object-group
     - title: Link till mitt github repo
-      url: https://github.com/Despina-P
+      url: https://github.com/Despina-P/design-ht22
       icon: pagelines
 ---
