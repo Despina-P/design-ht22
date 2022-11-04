@@ -82,6 +82,7 @@ body {
 
 .footer a {
     color: black;
+    text-decoration: none;
 }
 
 .footer .social {

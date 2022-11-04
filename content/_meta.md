@@ -1,5 +1,5 @@
 ---
-Logo: image/me/jpg
+Logo: image/me.jpg
 Tagline: My portfolio - Student at BTH
 Social:
     - title: Link till sidans github repo
