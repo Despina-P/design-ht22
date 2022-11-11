@@ -1,0 +1,35 @@
+/* Header */
+
+.header,
+.site-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: $footer-border-top;
+    background-color: $footer-background-color;
+    height: 100px;
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.footer a {
+    color: rgb(3, 3, 3);
+    text-decoration: none;
+}
+
+.footer .social {
+    font-size: 2rem;
+}
+
+/* Placement */
+
+.header,
+.footer {
+    flex: 0 0 auto;
+}

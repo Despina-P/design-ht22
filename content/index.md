@@ -1,6 +1,6 @@
 ---
 Title: Home
-Description: This is our index page.
+Description: This is our home page.
 ---
 
 Home page - A short presentation of myself

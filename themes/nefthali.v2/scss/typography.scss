@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lora&family=Neucha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Neucha&display=swap');
+
+html {
+    font-size: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul {
+    padding-left: 1.5em;
+}
+
+.hidden {
+    display: none !important;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+
+body {
+    background-color: $background-color;
+    font-family: 'Lora', serif;
+    line-height: 1.5rem;
+    color: $body-font-color;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* Placement */
+.main {
+    flex: 1 0 auto;
+    margin: 10px auto;
+    width: 80%;
+}
+
+
+p,
+td,
+th,
+li,
+dd {
+    text-align: justify;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0.6em;
+    font-weight: bold;
+    font-family: 'Neucha', cursive;
+}
+
+img {
+    max-width: 100%;
+}
+
+body .flash-region {
+    display: flex;
+    margin-left: 10%;
+    max-height: 4cm;
+    max-width: 52%;
+}
