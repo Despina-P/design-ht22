@@ -1,0 +1,30 @@
+.container-technology {
+    display: flex;
+    max-width: 960px;
+    justify-content: center;
+    align-items: baseline;
+    align-content: space-around;
+    padding-bottom: 3cm;
+}
+
+
+.side-bar {
+    width: 25%;
+    padding: 4rem;
+}
+
+.side-bar h2 {
+    font-family: 'Lora', serif;
+    color: rgb(59, 34, 19);
+}
+
+.technology-page {
+    width: 75%;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 799px) {
+    .side-bar {
+        display: none;
+    }
+}

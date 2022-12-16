@@ -1,0 +1,40 @@
+.courses-page {
+    display: grid;
+    grid-template-columns: 30% 30% auto;
+    grid-template-rows: 200px 200px 200px 200px;
+    gap: 2em 2em;
+}
+
+.course-box {
+    border: 1px solid #ccc;
+    padding: 2em;
+}
+
+.course-box:hover {
+    box-shadow: 10px 10px 5px 1px rgba(0.2, 0.2, 0.2, 0.4);
+}
+
+.design {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+.jsramverk {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+}
+
+.exjobb {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.webgl {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+}
+
+.webap {
+    grid-column: 2 / 4;
+    grid-row: 2 / 5;
+}

@@ -6434,7 +6434,8 @@ html {
   padding: 0;
 }
 
-ol, ul {
+ol,
+ul {
   padding-left: 1.5em;
 }
 
@@ -6442,12 +6443,13 @@ ol, ul {
   display: none !important;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
 body {
-  background-color: #F8EFED;
+  background-color: #f8efed;
   font-family: "Lora", serif;
   line-height: 1.5rem;
   color: #444;
@@ -6462,13 +6464,22 @@ body {
   width: 80%;
 }
 
-p, td, th, li, dd {
+p,
+td,
+th,
+li,
+dd {
   text-align: justify;
   overflow-wrap: break-word;
   word-wrap: break-word;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-bottom: 0.6em;
   font-weight: bold;
   font-family: "Neucha", cursive;
@@ -6522,7 +6533,8 @@ pre code {
 }
 
 /* Header */
-.header, .site-header {
+.header,
+.site-header {
   display: flex;
   justify-content: space-between;
 }
@@ -6539,7 +6551,7 @@ pre code {
 }
 
 .footer a {
-  color: black;
+  color: rgb(3, 3, 3);
   text-decoration: none;
 }
 
@@ -6548,17 +6560,20 @@ pre code {
 }
 
 /* Placement */
-.header, .footer {
+.header,
+.footer {
   flex: 0 0 auto;
 }
 
 /* Title */
-.title, .logo {
+.title,
+.logo {
   padding: 3em 3em 3em 0;
 }
 
 @media (max-width: 767px) {
-  .title, .logo {
+  .title,
+  .logo {
     padding: 1em 1em 1em 0;
   }
   .title {
@@ -6575,4 +6590,166 @@ pre code {
 
 .title p {
   font-style: italic;
+}
+
+/* report.scss */
+.landingpage {
+  display: grid;
+  gap: 1em 1em;
+}
+
+/* Rubrik */
+.landingpage h1 {
+  grid-column: span 3;
+  justify-self: center;
+}
+
+/* kmom10 */
+.kmom-box.project {
+  grid-column: span 3;
+}
+
+.courses-page {
+  display: grid;
+  grid-template-columns: 30% 30% auto;
+  grid-template-rows: 200px 200px 200px 200px;
+  gap: 2em 2em;
+}
+
+.course-box {
+  border: 1px solid #ccc;
+  padding: 2em;
+}
+
+.course-box:hover {
+  box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.4);
+}
+
+.design {
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+
+.jsramverk {
+  grid-column: 2/4;
+  grid-row: 1/2;
+}
+
+.exjobb {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.webgl {
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+
+.webap {
+  grid-column: 2/4;
+  grid-row: 2/5;
+}
+
+@media screen and (min-width: 700px) {
+  .technologies-page {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 120px 120px 120px;
+    grid-template-rows: 60px 60px 60px 60px 60px 60px;
+    max-width: 960px;
+    margin: 0 auto;
+    gap: 1em 1em;
+    padding-bottom: 5cm;
+  }
+  .technologies-box {
+    display: grid;
+    justify-items: stretch;
+    align-items: stretch;
+    border: 2px solid rgb(96, 63, 26);
+    padding: 2em;
+  }
+  .technologies-box h2 {
+    display: grid;
+    text-align: center;
+  }
+  /* Titel - three columns wide */
+  .technologies-page h1 {
+    display: grid;
+    grid-column: span 3;
+    grid-row: 1/2;
+    place-self: center stretch;
+    text-align: center;
+  }
+  .technologies-box:hover {
+    box-shadow: 10px 10px 5px 1px rgba(165, 122, 93, 0.456);
+  }
+  .technologies-box a {
+    color: rgb(59, 34, 19);
+  }
+}
+/*Box-sizes and orientation on landing page*/
+.css {
+  grid-column: 1/span 1;
+  grid-row: 2/2;
+}
+
+.html {
+  grid-column: 2/span 2;
+  grid-row: 2/2;
+}
+
+.javascript {
+  grid-column: 1/span 2;
+  grid-row: 3/3;
+}
+
+.php {
+  grid-column: 3/span 1;
+  grid-row: 3/3;
+}
+
+.python {
+  grid-column: 1/span 3;
+  grid-row: 4/4;
+}
+
+.git {
+  grid-column: 1/span 1;
+  grid-row: 5/5;
+}
+
+.sqlite {
+  grid-column: 2/span 2;
+  grid-row: 5/5;
+}
+
+.container-technology {
+  display: flex;
+  max-width: 960px;
+  justify-content: center;
+  align-items: baseline;
+  align-content: space-around;
+  padding-bottom: 3cm;
+}
+
+.side-bar {
+  width: 25%;
+  padding: 4rem;
+}
+
+.side-bar h2 {
+  font-family: "Lora", serif;
+  color: rgb(59, 34, 19);
+}
+
+.technology-page {
+  width: 75%;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 799px) {
+  .side-bar {
+    display: none;
+  }
 }

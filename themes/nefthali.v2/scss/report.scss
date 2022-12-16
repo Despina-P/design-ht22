@@ -1,0 +1,16 @@
+/* report.scss */
+.landingpage {
+    display: grid;
+    gap: 1em 1em;
+}
+
+/* Rubrik */
+.landingpage h1 {
+    grid-column: span 3;
+    justify-self: center;
+}
+
+/* kmom10 */
+.kmom-box.project {
+    grid-column: span 3;
+}

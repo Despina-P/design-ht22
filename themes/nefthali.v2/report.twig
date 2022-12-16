@@ -1,0 +1,19 @@
+{% include 'incl/header.twig' %}
+
+<body class="body">
+    {% include 'incl/nav.twig' %}
+
+    <div class="flash-region">
+        <img class="flash-img" src="https://media.istockphoto.com/vectors/panoramic-view-of-carnation-schabaud-pink-white-red-flowers-leaves-vector-id1141636935?k=20&m=1141636935&s=170667a&w=0&h=ZznhxK9nKT7bExkb7_fEZFNZf621OXk1ewW9i8Vj9Zo=">
+    </div>
+    
+    <div class="main" role="main">
+        <div class="landingpage">
+            {{ content }}
+        </div>
+    </div>
+
+    {% include 'incl/footer.twig' %}
+</body>
+
+</html>
